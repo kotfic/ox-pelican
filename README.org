@@ -1,0 +1,4 @@
+* ox-pelican.el  
+A simple implementation that (hopefully) will get out of your way and just let you write blog posts in org-files
+\\
+Still very experimental!
