@@ -30,6 +30,8 @@
 (defvar org-pelican-properties '("Title" "Date" "Modified" "Tags"
 		   "Category" "Slug" "Authors" "Summary"))
 
+(defvar org-pelican-post-process-cmd "pelican -s pelicanconf.py")
+
 (org-export-define-derived-backend 'pelican 'md
     :menu-entry
   '(?p "Export to Pelican Markdown"
@@ -137,9 +139,11 @@ export each individual headline seperately."
 			  (write-file outfile)))
 		    ;; (or (and (functionp post-process) (funcall post-process outfile))
 		    ;; outfile)))
-		    )))))
-	;;; End Map
-	))))
+		    ))))))
+	;;; End Map	 
+	  ))
+  ;; This should not be synchronous
+  (message "%s" (shell-command-to-string org-pelican-post-process-cmd)))
 
 
 (provide 'ox-pelican)
