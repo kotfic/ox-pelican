@@ -1,0 +1,100 @@
+#+OPTIONS: ^:nil toc:nil timestamp:nil num:nil
+#+AUTHOR: Christopher Kotfila
+#+EMAIL: kotfic@gmail.com
+* Example
+Currently this file expects to be placed in the root of a default pelican install.
+In emacs open the file,  and call the following function:
+
+#+BEGIN_SRC elisp
+;; add ox-pelican.el to your path
+(require 'ox-pelican)
+#+END_SRC
+
+Then just run:
+
+#+BEGIN_EXAMPLE
+C-c C-e p m
+#+END_EXAMPLE
+
+To export
+* About                                                                :page:
+:PROPERTIES:
+:EXPORT_FILE_NAME: content/pages/about
+:Title: About
+:Slug: about
+:END:
+
+Hi there,  this is a website!
+
+* Another Test Post                                                    :post:
+:PROPERTIES:
+:EXPORT_FILE_NAME: content/another-test-post
+:Title: Another Test Post
+:Date: 2010-12-03 10:20
+:Modified: 2010-12-05 19:30
+:Tags: test
+:Slug: another-test-post
+:Authors: Christopher Kotfila
+:Summary: Short version for index and feeds
+:END:
+
+** A little structure
+This is a test post with some content
+
+[[https://pages.github.com/][github pages]]
+
+This is a post called:
+
+** And here is some more content
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec hendrerit tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec vitae dolor. Nullam tristique diam non turpis. Cras placerat accumsan nulla. Nullam rutrum. Nam vestibulum accumsan nisl. \\
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  \\
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec hendrerit tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec vitae dolor. Nullam tristique diam non turpis. Cras placerat accumsan nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
+
+
+* Test Post                                                            :post:
+:PROPERTIES:
+:EXPORT_FILE_NAME: content/test-post
+:Title: Test Post
+:Date: 2010-12-03 10:20
+:Modified: 2010-12-05 19:30
+:Tags: test
+:Slug: test-post
+:Authors: Christopher Kotfila
+:Summary: Short version for index and feeds
+:END:
+
+** A little structure
+This is a test post with some content
+
+[[https://pages.github.com/][github pages]]
+
+This is a post called:
+
+** And here is some more content
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec hendrerit tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec vitae dolor. Nullam tristique diam non turpis. Cras placerat accumsan nulla. Nullam rutrum. Nam vestibulum accumsan nisl. \\
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  \\
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec hendrerit tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec vitae dolor. Nullam tristique diam non turpis. Cras placerat accumsan nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
+
+
+* Here is another post                                                 :post:
+:PROPERTIES:
+:EXPORT_FILE_NAME: content/third-test-post
+:Title: Test Post 3
+:Date: 2010-12-03 10:20
+:Modified: 2010-12-05 19:30
+:Tags: test
+:Slug: test-post-3
+:Authors: Christopher Kotfila
+:Summary: A third test post
+:END:      
+** Headline
+Lorem *ipsum dolor* sit amet, consectetuer adipiscing elit. Donec hendrerit tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec vitae dolor. Nullam tristique diam non turpis. Cras placerat accumsan nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
+
+Lorem /ipsum dolor/ sit amet, consectetuer adipiscing elit. Donec hendrerit tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec vitae dolor. Nullam tristique diam non turpis. Cras placerat accumsan nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
+
+
+
